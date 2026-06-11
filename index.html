@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Git</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="topbar">
+      <a class="brand" href="#">Portal Git</a>
+      <div class="nav-links">
+        <a href="#utilidades">Utilidades</a>
+        <a href="#comandos">Comandos</a>
+        <a href="#recursos">Recursos</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <p class="tag">Practica Git y GitHub</p>
+      <h1>Un portal sencillo para aprender haciendo</h1>
+      <p>
+        Usa esta web para practicar commits, ramas, cambios en archivos y subidas
+        a GitHub durante tu curso.
+      </p>
+      <a class="button" href="#utilidades">Ver utilidades</a>
+    </section>
+  </header>
+
+  <main>
+    <section id="utilidades" class="section">
+      <div class="section-title">
+        <p class="tag">Herramientas</p>
+        <h2>Utilidades para tu curso</h2>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Checklist de practica</h3>
+          <label><input type="checkbox"> Crear un repositorio</label>
+          <label><input type="checkbox"> Hacer mi primer commit</label>
+          <label><input type="checkbox"> Crear una rama nueva</label>
+          <label><input type="checkbox"> Subir cambios a GitHub</label>
+        </article>
+
+        <article class="card">
+          <h3>Notas rapidas</h3>
+          <p>Escribe aqui ideas para practicar:</p>
+          <ul>
+            <li>Cambiar colores en CSS.</li>
+            <li>Anadir una nueva seccion.</li>
+            <li>Editar este texto y hacer commit.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Reto del dia</h3>
+          <p>
+            Crea una rama llamada <strong>mejora-diseno</strong>, cambia el estilo
+            de una tarjeta y guarda el cambio con un commit.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="comandos" class="section section-alt">
+      <div class="section-title">
+        <p class="tag">Chuleta</p>
+        <h2>Comandos basicos de Git</h2>
+      </div>
+
+      <div class="commands">
+        <div><span>Ver estado</span><code>git status</code></div>
+        <div><span>Anadir cambios</span><code>git add .</code></div>
+        <div><span>Crear commit</span><code>git commit -m "mensaje"</code></div>
+        <div><span>Ver ramas</span><code>git branch</code></div>
+        <div><span>Cambiar de rama</span><code>git switch nombre-rama</code></div>
+        <div><span>Subir a GitHub</span><code>git push</code></div>
+      </div>
+    </section>
+
+    <section id="recursos" class="section">
+      <div class="section-title">
+        <p class="tag">Aprendizaje</p>
+        <h2>Recursos utiles</h2>
+      </div>
+
+      <div class="resource-list">
+        <a href="https://git-scm.com/doc" target="_blank" rel="noreferrer">Documentacion oficial de Git</a>
+        <a href="https://docs.github.com/es" target="_blank" rel="noreferrer">Documentacion de GitHub en espanol</a>
+        <a href="https://learngitbranching.js.org/?locale=es_ES" target="_blank" rel="noreferrer">Juego para practicar ramas</a>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <h2>Mini agenda</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Dia</th>
+            <th>Practica</th>
+            <th>Comando clave</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Crear repositorio y archivos</td>
+            <td><code>git init</code></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Guardar cambios</td>
+            <td><code>git commit</code></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Trabajar con ramas</td>
+            <td><code>git switch -c</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Proyecto de practica para Git y GitHub.</p>
+  </footer>
+</body>
+</html>
