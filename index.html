@@ -67,7 +67,7 @@
     <section id="comandos" class="section section-alt">
       <div class="section-title">
         <p class="tag">Chuleta</p>
-        <h2>Comandos basicos de Git</h2>
+        <h2>Comandos de Git</h2>
       </div>
 
       <div class="commands">
@@ -79,6 +79,26 @@
         <div><span>Subir a GitHub</span><code>git push</code></div>
       </div>
     </section>
+
+    <section class="section">
+  <div class="section-title">
+    <p class="tag">Galería</p>
+    <h2>Capturas del proyecto</h2>
+  </div>
+
+  <div class="carousel">
+    <button class="prev" type="button" aria-label="Imagen anterior">&#10094;</button>
+
+    <div class="carousel-track">
+      <img src="assets/img/git1.jpg" class="active" alt="Git">
+      <img src="assets/img/git2.jpg" alt="GitHub">
+      <img src="assets/img/git3.jpg" alt="VS Code">
+      <img src="assets/img/git4.jpg" alt="Terminal">
+    </div>
+
+    <button class="next" type="button" aria-label="Imagen siguiente">&#10095;</button>
+  </div>
+</section>
 
     <section id="recursos" class="section">
       <div class="section-title">
@@ -127,5 +147,32 @@
   <footer class="footer">
     <p>Proyecto de practica para Git y GitHub.</p>
   </footer>
+  <script>
+    const images = document.querySelectorAll(".carousel img");
+    const next = document.querySelector(".next");
+    const prev = document.querySelector(".prev");
+
+    let current = 0;
+
+    function showImage(index) {
+      images.forEach((image) => image.classList.remove("active"));
+      images[index].classList.add("active");
+    }
+
+    next.addEventListener("click", () => {
+      current = (current + 1) % images.length;
+      showImage(current);
+    });
+
+    prev.addEventListener("click", () => {
+      current = (current - 1 + images.length) % images.length;
+      showImage(current);
+    });
+
+    setInterval(() => {
+      current = (current + 1) % images.length;
+      showImage(current);
+    }, 4000);
+  </script>
 </body>
 </html>
