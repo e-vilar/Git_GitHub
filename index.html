@@ -13,6 +13,7 @@
       <div class="nav-links">
         <a href="#utilidades">Utilidades</a>
         <a href="#comandos">Comandos</a>
+        <a href="#flujo">Flujo</a>
         <a href="#recursos">Recursos</a>
       </div>
     </nav>
@@ -78,6 +79,39 @@
         <div><span>Ver ramas</span><code>git branch</code></div>
         <div><span>Cambiar de rama</span><code>git switch nombre-rama</code></div>
         <div><span>Subir a GitHub</span><code>git push</code></div>
+      </div>
+    </section>
+
+    <section id="flujo" class="section">
+      <div class="section-title">
+        <p class="tag">Practica</p>
+        <h2>Flujo basico de trabajo</h2>
+      </div>
+
+      <div class="workflow">
+        <article>
+          <span>1</span>
+          <h3>Crea una rama</h3>
+          <p>Trabaja los cambios nuevos en una rama separada para practicar sin tocar la principal.</p>
+        </article>
+
+        <article>
+          <span>2</span>
+          <h3>Edita archivos</h3>
+          <p>Cambia el HTML o el CSS, revisa el resultado y comprueba el estado con Git.</p>
+        </article>
+
+        <article>
+          <span>3</span>
+          <h3>Guarda el cambio</h3>
+          <p>Anade los archivos al seguimiento y crea un commit con un mensaje claro.</p>
+        </article>
+
+        <article>
+          <span>4</span>
+          <h3>Sube a GitHub</h3>
+          <p>Publica la rama en GitHub para revisar tus cambios desde el repositorio remoto.</p>
+        </article>
       </div>
     </section>
 
@@ -174,6 +208,6 @@
       current = (current + 1) % images.length;
       showImage(current);
     }, 4000);
-  </script> -->
+  </script>
 </body>
 </html>
