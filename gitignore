@@ -1,3 +1,5 @@
 #archivos ignorados
 
 *.main.dart
+*.jpg
+*.png
